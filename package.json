@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sd": "node src/index.js"
+    "vl": "eslint src/ dev/",
+    "sd": "npx nodemon --exec npx cross-env NODE_ENV=production APP_MODE=development node dev/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,14 @@
   "homepage": "https://github.com/rkscapul/the-lab-weather-api#readme",
   "dependencies": {
     "aws-sdk": "^2.1316.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "custom-env": "^2.0.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.20"
   }
 }

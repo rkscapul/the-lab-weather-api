@@ -1,1 +1,3 @@
-console.log("Hello")
+import { getSecrets } from './managers/values.cjs';
+
+getSecrets();
